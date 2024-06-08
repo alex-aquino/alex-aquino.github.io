@@ -76,7 +76,8 @@ section.secondary p {
 section.mainstory h2 {
     font-size: 2.75em;
     margin-left: 0.15em;
-    padding-bottom: 0.1em;
+    padding-bottom: 0.15em;
+    padding-top: 0.2em;
 }
 
 section.mainstory p {
@@ -116,15 +117,12 @@ nav ul li {
     padding: 1em 2em 1em 0em;
 }
 
-nav ul li:hover {
-    color: rgb(233, 229, 211);
-}
 
 nav.gallery {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 0.5em;
-    padding: 1em 0em 1em 0em;
+    padding: 0em 0em 1em 0em;
 }
 
 main.gallery {
@@ -242,6 +240,84 @@ footer p {
     color: rgb(233, 229, 211);
 }
 
+#logo {
+    content: url('padres\ mag\ logo.svg');
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    h1  {
+        content: url('padres\ mag\ logo\ flipped.svg');
+    }
+
+    body {
+        background-color: rgb(83, 50, 16);
+      }
+
+    header {
+        background-color: rgb(255, 244, 172);
+      }
+    
+    nav ul li a {
+        color: rgb(83, 50, 16);
+    }
+    
+    footer {
+        background-color: rgb(255, 244, 172);
+    }
+
+    footer p {
+        color: rgb(83, 50, 16);
+    }
+
+    section.secondary {
+        background-color: rgb(255, 244, 172);
+    }
+
+    section.secondary h2{
+        color: rgb(83, 50, 16);
+    }
+
+    section.secondary p{
+        color: rgb(83, 50, 16);
+    }
+
+    aside h2 {
+        color: rgb(255, 200, 0);
+    }
+    section.tertiary h2 {
+        border-top: 0.15em solid rgb(255, 244, 172);
+    }
+
+    aside p {
+        color: rgb(255, 244, 172);
+    }
+
+    section.mainstory h2 {
+        color: rgb(255, 200, 0);
+    }
+
+    section.mainstory p {
+        color: rgb(255, 244, 172);
+    }
+
+    aside.contrast {
+        background-color: rgb(255, 244, 172);
+    } 
+
+    article h2 {
+        color: rgb(255, 200, 0);
+    }
+
+    figcaption {
+        color: rgb(255, 200, 0);
+    }
+
+    article p {
+        color: rgb(255, 244, 172);
+    }
+}
+
 @media screen and (max-width: 40em) {
     
     nav ul li{
@@ -282,6 +358,7 @@ footer p {
     main p {
         padding-left: 0.5em;
     }
+
 
 }
 
