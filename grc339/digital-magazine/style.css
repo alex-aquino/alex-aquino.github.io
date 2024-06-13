@@ -26,9 +26,9 @@ header {
     width: 100%;
     margin: auto;
     padding-bottom: 1em;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 15px 15px;
     max-width: 80em;
-    margin-bottom: 0.5em;
+    
 }
 
 h1 {
@@ -46,6 +46,10 @@ h2 {
     padding: 0em 0em 0.2em 0em; 
 }
 
+article img {
+    border-radius: 15px 15px 15px 15px;
+}
+
 article h2 {
     font-size: 2.75em;
     margin: 0.5em 0em 0em 0em;
@@ -57,7 +61,7 @@ section.main h2 {
 
 section.secondary {
     background-color: rgb(83, 50, 16);
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 30px 30px 15px 15px;
 }
 
 section.secondary h2 {
@@ -66,11 +70,18 @@ section.secondary h2 {
     margin-left: 0.75em;
 }
 
+section.secondary img {
+    border-radius: 15px 15px 0px 0px;
+}
 section.secondary p {
     color: rgb(233, 229, 211);
     padding-left: 1em;
     padding-top: 0.25em;
     padding-right:0.25em;
+}
+
+section.mainstory img {
+    border-radius: 15px 15px 15px 15px;
 }
 
 section.mainstory h2 {
@@ -96,7 +107,7 @@ aside.contrast section{
 }
     
   
-ul {
+nav ul {
     list-style-type: none;
 }
 
@@ -109,7 +120,7 @@ nav ul li a {
     list-style-type: none;
     color: rgb(255, 200, 0);
     text-align:center;
-    margin-left: 4.05em;
+    margin-left: 4.1em;
 }
 
 nav ul li {
@@ -150,7 +161,6 @@ section ul li input[type="email"],
 img {
     width: 100%;
     display: block;
-    border-radius: 10px 10px 0px 0px;
 }
 
 figure {
@@ -171,14 +181,14 @@ figcaption {
     font-weight: 400;
     font-style: italic;
     line-height: 1.25em;
-    color: rgb(62, 38, 14);
+    color: rgb(83, 50, 16);
 }
 
 aside {
     background-color: rgb(83, 50, 16);
     background-size: 100%;
     padding: 0em 0.35em 1em 0.35em;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
@@ -197,28 +207,88 @@ aside h2 {
 }
 
 aside.contrast p {
-    margin-left: 0.4em;
+    margin-left: 0.75em;
     color: rgb(233, 229, 211);
 }
 
 aside.contrast h2 {
-    margin-left: 0.5em;
     color: rgb(255, 200, 0);
+    margin-top: 0.25em;
 }
 
 aside.contrast p {
     padding-left: 0.25em;
 }
 
+aside.contrast img {
+    border-radius: 15px 15px 15px 15px;
+}
 div.container, div.home-container {
     max-width: 40em;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 1.5em;
 }
 
 div.gallery {
     max-width: 80em;
-    margin: 0em auto;
+    margin: auto;
+}
+
+form {
+    margin: 0;
+    padding: 3em 0em 20.95em 4em;
+}
+
+form ul {
+    list-style-type: none;
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+form section {
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+form ul li {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    font-family: "new-science", sans-serif;
+    font-weight: 300;
+    color: rgb(83, 50, 16);
+}
+
+form ul li input[type="checkbox"] {
+    margin-right: 1em; 
+    display: inline-block; 
+}
+
+form ul li label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+
+section ul li select {
+	flex: 1 0 25em;  
+	box-sizing: border-box;
+}
+
+.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 0 5em;
+}
+
+.personal-info ul li label {
+	flex: 0 0 5em;
+}
+
+.personal-info li {
+	padding-bottom: 1em;
 }
 
 footer {
@@ -231,13 +301,13 @@ footer {
     box-sizing: border-box;
     background-color: rgb(83, 50, 16);
     margin: 0 auto;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 footer p {
     margin: 0;
     padding: 0.5em 0em 0em 1.5em;
-    color: rgb(233, 229, 211);
+    color: rgb(255, 200, 0);
 }
 
 #logo {
@@ -255,7 +325,7 @@ footer p {
       }
 
     header {
-        background-color: rgb(255, 244, 172);
+        background-color: rgb(237, 231, 181);
       }
     
     nav ul li a {
@@ -263,7 +333,7 @@ footer p {
     }
     
     footer {
-        background-color: rgb(255, 244, 172);
+        background-color: rgb(237, 231, 181);
     }
 
     footer p {
@@ -271,7 +341,7 @@ footer p {
     }
 
     section.secondary {
-        background-color: rgb(255, 244, 172);
+        background-color: rgb(237, 231, 181);
     }
 
     section.secondary h2{
@@ -285,12 +355,13 @@ footer p {
     aside h2 {
         color: rgb(255, 200, 0);
     }
+
     section.tertiary h2 {
-        border-top: 0.15em solid rgb(255, 244, 172);
+        border-top: 0.15em solid rgb(237, 231, 181);
     }
 
     aside p {
-        color: rgb(255, 244, 172);
+        color: rgb(237, 231, 181);
     }
 
     section.mainstory h2 {
@@ -298,11 +369,11 @@ footer p {
     }
 
     section.mainstory p {
-        color: rgb(255, 244, 172);
+        color: rgb(237, 231, 181);
     }
 
     aside.contrast {
-        background-color: rgb(255, 244, 172);
+        background-color: rgb(237, 231, 181);
     } 
 
     article h2 {
@@ -314,7 +385,15 @@ footer p {
     }
 
     article p {
-        color: rgb(255, 244, 172);
+        color: rgb(237, 231, 181);
+    }
+
+    form h2 {
+        color: rgb(255, 200, 0);
+    }
+
+    form ul li label {
+        color: rgb(255, 200, 0);
     }
 }
 
@@ -369,7 +448,7 @@ footer p {
         padding: 0 1em;
         display: grid;
         grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
+        grid-gap: 1.5em;
     }
 
     div.container {
@@ -377,7 +456,7 @@ footer p {
         padding: 0;
         display: grid;
         grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
+        grid-gap: 1.5em;
     }
 
     header, footer {
@@ -387,7 +466,7 @@ footer p {
     div.home-container main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
+        grid-gap: 1.5em;
     }
 
     div.home-container aside {
